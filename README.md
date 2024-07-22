@@ -8,3 +8,19 @@ Now, theoretically above method should take O(SIZE + 1) time in linked list O(SI
 shifing values by 1 that are right of the current element and then O(1) for replacing the current value with the current random number. However, practically it doesn't happen. When you simply run the code you will
 see that after SIZE = 5000 the array method takes less time than linked list method. 
 However, when you run the code with compiler optimisation you will see the real magic. For that you will have to run this command ==> g++ -O3 -o myprogram a.cpp; ./myprogram
+
+
+| SIZE of the stream of random numbers | Time taken for Array in MicroSeconds | Time Taken for Linked List in MicroSeconds |
+|-------------------------------------|--------------------------------------|--------------------------------------------|
+| 10                                  | 0                                    | 0                                          |
+| 50                                  | 0                                    | 1                                          |
+| 100                                 | 0                                    | 3                                          |
+| 200                                 | 0                                    | 11                                         |
+| 500                                 | 0                                    | 65                                         |
+| 1000                                | 0                                    | 248                                        |
+| 2000                                | 0                                    | 2157                                       |
+| 5000                                | 0                                    | 29394                                      |
+| 10000                               | 0                                    | 127103                                     |
+| 50000                               | 0                                    | 6318925                                    |
+| 100000                              | 0                                    | 28782206                                   |
+
